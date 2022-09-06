@@ -12,5 +12,5 @@ jobs:
       - uses: actions/setup-node@v1
         with: 
           node-vesrion: 14
-      - run : npm c1
+      - run : npm ci
       - run : npm test   
