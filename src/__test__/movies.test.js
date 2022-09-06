@@ -4,9 +4,9 @@ import {
   waitFor,
   render,
 } from "@testing-library/react";
-import Movies from "./movies";
+import Movies from "../movies";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import Detail from "./detail";
+import Detail from "../detail";
 
 
 const queryClient = new QueryClient();
@@ -58,6 +58,9 @@ it("renders all the movies.", async () => {
     const element = await waitFor(() => component.findByText(/A New Hope/i), {timeout: 10000});
     expect(element).toBeInTheDocument();
 });
+
+
+
 
 
 // it('renders details pages', async () => {
