@@ -11,7 +11,7 @@ export default function Detail(props) {
     if (!loading) {
       return (
         <div>
-          {/* <p>{data.title}</p> */}
+          <p>{data.title}</p>
           <p>Director: {data.director}</p>
           <p>Producer: {data.producer}</p>
           <p>ReleaseDate: {data.release_date}</p>

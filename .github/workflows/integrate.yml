@@ -1,10 +1,12 @@
 name: React CI
 
 on:
+#on wat action
   pull_request:
+#from which branch
     branches: [ main ]
 
-
+#https://github.com/marketplace?category=&query=&type=actions&verification=
 jobs:
   test_pull_request:
     runs-on: ubuntu-latest
