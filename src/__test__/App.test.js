@@ -6,9 +6,9 @@ import {
   screen,
   renderHook,
 } from "@testing-library/react";
-import App from "./App";
+import App from "../App";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { LocationProvider, useHistory } from "./useHistory";
+import { LocationProvider, useHistory } from "../useHistory";
 
 const queryClient = new QueryClient();
 
